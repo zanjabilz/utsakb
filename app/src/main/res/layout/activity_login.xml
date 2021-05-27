@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="Login Page"
         android:textSize="25dp"
-        android:layout_marginLeft="18dp"
+        android:layout_marginLeft="25dp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
 
@@ -47,7 +47,7 @@
                 app:labelText="Username">
 
                 <studio.carbonylgroup.textfieldboxes.ExtendedEditText
-                    android:id="@+id/username"
+                    android:id="@+id/editusername"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
@@ -62,32 +62,26 @@
 
                 <studio.carbonylgroup.textfieldboxes.ExtendedEditText
 
-                    android:id="@+id/password"
+                    android:id="@+id/editpassword"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"/>
 
             </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
-            <com.ornach.nobobutton.NoboButton
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:layout_marginBottom="10dp"
-                app:nb_text="Login"
-                app:nb_textSize="15dp"
-                app:nb_borderColor="@color/black"
-                app:nb_borderWidth="2dp"
-                app:nb_backgroundColor="#23b0f1"
-
-                app:nb_focusColor="#B83CC3"
-                app:nb_textColor="#FFF"
-                app:nb_radius="5dp"/>
+                android:layout_marginTop="50dp"
+                android:id="@+id/login"
+                android:text="Login"
+                android:background="@null"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/logout"
                 android:text="Sudah Login? Logout disini!"
                 android:background="@null"
                 android:textAllCaps="false"/>
